@@ -2,10 +2,10 @@ Pod::Spec.new do |s|
   version = '3.2.0'
   artifact_base_url = "https://mobile-ios.tigerfintech.com/TigerTradingSDK/#{version}"
 
-  s.name = 'TigerTradingSDK-US-Binary'
+  s.name = 'TigerTradingSDKUS'
   s.version = version
-  s.summary = 'Internal US flavor binaries for TigerTradingSDK.'
-  s.description = 'Contains only the US-specific XCFrameworks for TigerTradingSDK.'
+  s.summary = 'Tiger Trading iOS SDK US flavor.'
+  s.description = 'US TigerTradingSDK XCFrameworks, plus the shared Core dependency.'
   s.homepage = 'https://developer.itigerup.com/docs/openapi/repository/1675/markdown/master/data/classes/overview.md'
   s.license = { :type => 'MIT', :file => 'LICENSE' }
   s.author = { 'Tiger Fintech' => 'ios@tigerfintech.com' }
@@ -17,6 +17,7 @@ Pod::Spec.new do |s|
   s.platform = :ios, '13.0'
   s.cocoapods_version = '>= 1.10.0'
   s.vendored_frameworks = 'Frameworks/*.xcframework'
+  s.dependency 'TigerTradingSDKCore', version
   s.preserve_paths = [
     'LICENSE',
     'dSYMs/**/*',
