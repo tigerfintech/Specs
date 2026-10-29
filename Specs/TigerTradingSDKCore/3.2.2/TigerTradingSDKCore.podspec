@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author = { 'Tiger Fintech' => 'ios@tigerfintech.com' }
   s.source = {
     :http => "#{artifact_base_url}/#{version}/core-3.2.2.zip",
-    :sha256 => "24b26d55f7bebb1d31a807a1bea9e9bcc8f45b469f4651e03ec8056bacc4e84b",
+    :sha256 => "91cd05afe437a380bf5827ca4315f0398374d4ee2968daacdf4ac8652070dddf",
   }
 
   s.platform = :ios, '13.0'
