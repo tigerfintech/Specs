@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author = { 'Tiger Fintech' => 'ios@tigerfintech.com' }
   s.source = {
     :http => "#{artifact_base_url}/#{version}/us-3.2.1.zip",
-    :sha256 => "619e9d780d89d19c1ffef89daafb03e0b0d65f88efe8f285fe6dbf7a53b6fc1c",
+    :sha256 => "497ab3d9113524a5097d5c615b1b1414fa2c45e458ab00c95bacb133e3fbe8f7",
   }
 
   s.platform = :ios, '13.0'
@@ -23,7 +23,11 @@ Pod::Spec.new do |s|
     'SHA256SUMS',
   ]
   s.dependency 'TigerTradingSDKCore', version
-  s.dependency 'GTCaptcha4', '= 1.8.8'
-  s.dependency 'Intercom', '= 9.3.5.2'
-  s.dependency 'RecaptchaEnterprise', '= 18.7.0'
+  s.dependency "AFNetworking", "= 4.0.3"
+  s.dependency "GTCaptcha4", "= 1.8.8"
+  s.dependency "Intercom", "= 9.3.5.2"
+  s.dependency "Protobuf", "= 3.26.1"
+  s.dependency "RecaptchaEnterprise", "= 18.7.0"
+  s.dependency "YYText", "= 1.0.8"
+  s.dependency "libpag", "= 4.3.64"
 end

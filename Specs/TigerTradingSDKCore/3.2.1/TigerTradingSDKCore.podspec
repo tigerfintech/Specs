@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author = { 'Tiger Fintech' => 'ios@tigerfintech.com' }
   s.source = {
     :http => "#{artifact_base_url}/#{version}/core-3.2.1.zip",
-    :sha256 => "87e288be8ee489c407474295d0e159cc551e0506c0cacc117f0b047c68930cc2",
+    :sha256 => "5353a639cafc4c8202873a4e8b0c3b9a9a745264f9b022e98d0d42726806f5fa",
   }
 
   s.platform = :ios, '13.0'
@@ -26,20 +26,20 @@ Pod::Spec.new do |s|
   s.dependency "CocoaLumberjack"
   s.dependency "FLAnimatedImage"
   s.dependency "FMDB"
-  s.dependency "libpag", '= 4.3.64'
-  s.dependency "Mantle"
-  s.dependency "Masonry"
   s.dependency "MBProgressHUD"
   s.dependency "MJRefresh"
   s.dependency "MMKV"
   s.dependency "MMKVCore"
+  s.dependency "Mantle"
+  s.dependency "Masonry"
   s.dependency "MqttCocoaAsyncSocket"
   s.dependency "PromisesObjC"
   s.dependency "PromisesSwift"
-  s.dependency "Protobuf", '= 3.26.1'
+  s.dependency "Protobuf"
   s.dependency "ReactiveObjC"
   s.dependency "SDWebImage"
-  s.dependency "YYCategories", '= 1.0.4'
+  s.dependency "YYCategories", "= 1.0.4"
   s.dependency "YYModel"
-  s.dependency "YYText", '= 1.0.8'
+  s.dependency "YYText"
+  s.dependency "libpag"
 end

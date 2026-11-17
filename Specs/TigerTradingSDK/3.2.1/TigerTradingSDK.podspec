@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author = { 'Tiger Fintech' => 'ios@tigerfintech.com' }
   s.source = {
     :http => "#{artifact_base_url}/#{version}/standard-3.2.1.zip",
-    :sha256 => "74f7dd37503bde53091b220e97a1edabc18ee2f51767869b44e97825c08d801b",
+    :sha256 => "c00275dbcb8d567efb28e3e715c6560f2a51a863f258de9cb2a87110370550d0",
   }
 
   s.platform = :ios, '13.0'
@@ -23,4 +23,8 @@ Pod::Spec.new do |s|
     'SHA256SUMS',
   ]
   s.dependency 'TigerTradingSDKCore', version
+  s.dependency "AFNetworking", "= 4.0.3"
+  s.dependency "Protobuf", "= 3.26.1"
+  s.dependency "YYText", "= 1.0.8"
+  s.dependency "libpag", "= 4.3.64"
 end
